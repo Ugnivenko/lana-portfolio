@@ -1,0 +1,20 @@
+seo:
+  site_name: LA. Web Development
+  title: Web Development
+  description: creating customed web sites and helping make projects a success 
+  keywords: [web sites, web development, freelance] 
+  social_image: 
+  author:
+  favorite_image: 
+social:
+  instagram_username:
+  facebook_url:
+  twitter_username:
+  twitter_description:
+design:
+  dark-background_color: '#506d5f'
+  light-background_color: '#e5ece8'
+  featured_color: '#506d5f'
+  text-dark_color: '#243026'
+  text-white_color: '#ffffff'
+  icons_color: '#78787d'
