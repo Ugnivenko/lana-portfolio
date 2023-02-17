@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html> 
+<!-- - This is the head of the HTML for linking external resources & metadata ---->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
+    {% include cookie-banner.html %} 
+    {% include head.html %}
 </head>
+    
+    <!------ This is the body, where all of the contents of our page go  ------->
+    <body>
 
-<body>
-    {{content}}
-</body>
+    {{ content }}
 
-</html>
+    {% include site-footer.html %}
+    {% include body-scripts.html %}
+    
+    </body>
+    </html>
