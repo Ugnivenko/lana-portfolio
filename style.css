@@ -183,7 +183,9 @@ header { padding: 2% 2%;}
 footer p {
   color: #f8f8f8;
   opacity: 0.8;
-
+}
+.t-hover:hover {
+    color: #e24848;
 }
 
 /* Buttons ---------------*/
@@ -203,12 +205,14 @@ footer p {
 }
 
 /* ------- Social Links - Class ------------ */
-.fa-brands {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  padding-left: 0.5rem;
+.fa-brands, .fa-solid {
+  font-size: 1rem;
+  margin-right: 0.2rem;
 }
 .fa-brands:hover {
+  color: #e24848;
+}
+.fa-solid:hover {
   color: #e24848;
 }
 .fa-brands:first-child {padding-left: 0%;}
@@ -248,7 +252,7 @@ footer p {
 
 input, textarea {
     border-style: solid;
-    border: 2px solid rgb(200, 200, 205);
+    border: 1px solid rgb(200, 200, 205);
     padding: 0.8em;
     display: block;
     width: 100%;
@@ -259,7 +263,7 @@ input, textarea {
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid #e24848;
+    border: 1px solid #e24848;
     /* featured color */
   }
   
