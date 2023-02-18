@@ -180,6 +180,11 @@ nav a:hover { color: #e24848;}
 /* Footer & Header ------------------------- */
 
 header { padding: 2% 2%;}
+footer p {
+  color: #f8f8f8;
+  opacity: 0.8;
+
+}
 
 /* Buttons ---------------*/
 .button {
@@ -254,17 +259,19 @@ input, textarea {
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid #e67e22;
+    border: 2px solid #e24848;
     /* featured color */
   }
   
   textarea {
     min-height: 7em;
+    resize: vertical;
   }
   
   input[type="submit"] {
-    width: auto;
+    width: 100px;
     display: block;
+    padding: 0.5rem 0.8rem;
   }
   
   form [class*=col-] {
