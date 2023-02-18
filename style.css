@@ -26,13 +26,12 @@ dark #3f564b
     padding: 0.5rem;
     border: 1px solid rgb(220,220,220);
 }
-html,
+/* html,
 body {
     border: none;
-}
-h1, h2, h3, h4, h5, h6, p, a {border: 1px solid rgb(210, 152, 145);}
+} */
+/* h1, h2, h3, h4, h5, h6, p, a {border: 1px solid rgb(210, 152, 145);} */
 .bg-image {background-color: rgb(224, 188, 127);}
-
 /* End temporary styles */
 
 /* Re-usable Utiity Classes  */
@@ -104,15 +103,70 @@ h1, h2, h3, h4, h5, h6, p, a {border: 1px solid rgb(210, 152, 145);}
 .square        { padding-bottom: 100%; }
 
 /* Background Colors--------- */
-.bg-light    { background-color: #e5ece8; }
-.bg-featured { background-color: #95b1a2; }
-.bg-dark      {background-color: #506d5f; }
+.bg-light    { background-color: white; }
+.bg-featured { background-color: red; }
+.bg-dark      {background-color: black; }
 .border-white { border: 1rem solid white;}
 
-.text-featured { color: #506d5f;} 
+.text-featured { color: red;} 
 .text-white {color: white;}
-.text-dark {color: #243026;}
+.text-dark {color: black;}
 
+/* ------ Base Typography ------- */
+body {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2,h4,h5,h6 {
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5rem;}
+h2 { font-size: 2rem; }
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+a {
+  direction: none;
+  border-bottom: 1px;
+  color: inherit;
+}
+p {  
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+p:last-child {
+ margin-bottom: 0;
+}
+h1:last-child, 
+h2:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtle { 
+  opacity: 0.8;
+} 
+.capped-width-narrow {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-style: italic;
+  }
 
 /* Icons------------------------------------- */
 
@@ -124,6 +178,51 @@ h1, h2, h3, h4, h5, h6, p, a {border: 1px solid rgb(210, 152, 145);}
 /* Footer & Header ------------------------- */
 
 header { padding: 1% 5%;}
+
+/* Buttons ---------------*/
+.button {
+  text-decoration: none;
+  border: 2px solid; 
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: black;
+  background-color:  white;
+  margin-top: 0.8rem;
+}
+.button:hover {
+  background-color: red;
+}
+
+/* ------- Social Links - Class ------------ */
+.fa-brands {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+.fa-brands:hover {
+  color: red;
+}
+.fa-brands:first-child {padding-left: 0%;}
+
+
+.social-share a {
+  padding: 0.25rem 0.5rem;
+}
+
+
+/*-- Background Images --------------------------------*/
+
+.bg-image {
+  background-color: rgb(240,240,240); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-image: url('/images/bg-light.jpg');
+}
+
+.gallery [class*="col-"] { padding: 0.5%;}
 
 /* Contacts ----------------------------------- */
 
@@ -173,6 +272,16 @@ input, textarea {
     width:100%;
   }
 
+/* Typing Animation------- */
+
+#typed {
+	color: black;
+  font-size: 1.3rem;
+} 
+#black {color: black;}
+.typed-cursor {
+  font-size: 1.5rem;
+}
 
 
 
@@ -181,10 +290,12 @@ input, textarea {
 
 
 
-
-
-
-
+/* General CSS Responsive Styles ---------------------------- */
+.show-xs, 
+.show-sm,
+.show-md {
+    display: none;
+} 
 
 
   
