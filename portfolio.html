@@ -1,0 +1,52 @@
+--- 
+layout: default 
+---
+
+<section class="grid padded bg-green">
+    <div class="col-9 light-text padded-b">
+        <h3> We design & create but if you have a design of your own, let us know! </h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi neque distinctio, illum dolore fugit autem totam molestias labore, voluptatem provident quaerat vel eum repellat ducimus! Laboriosam nemo illo illum suscipit!</p>
+    </div>
+
+
+{% for project in site.projects limit:5 offset:1 %}
+    <div class="col-7_sm-12-middle margin-b-2">
+        <div class="bg-image landscape" style="background-image: url('{{project.featured_image}}');"> </div>
+    </div>
+    <div class="col-5_sm-12-middle padded-2">
+        <h3> {{project.title}} </h3>
+        <p class="emphasis"> {{project.description}} </p>
+        <p class="emphasis"> Design by: {{project.design-by}} </p>
+        <p class="emphasis"> Build by: {{project.build-by}} </p>
+        <a href="{{project.live_url}}" class="button" target="_blank"> View Live Site </a>
+    </div>
+{% endfor %}
+</section> 
+
+{% include newsletter-signup.html %}
+
+<section class="padded">
+    <h2 class="center margin-b-2"> Featured Project </h2>
+
+    <div class="capped-width"> 
+
+    {% for project in site.projects limit:1 %}
+
+    <div class="bg-image landscape"
+    style="background-image: url('{{project.featured_image}}');"></div>
+
+    <div class="grid-spaceBetween">
+        <div class="col-5 padded-1 margin-t-1"> 
+            <h3> {{project.title}} </h3>
+            <p class="emphasis"> {{project.description}} </p>
+        </div>
+        <div class="col-4 padded-1 margin-t-1"> 
+            <p class="emphasis"> Design by: {{project.design-by}} </p>
+            <p class="emphasis"> Build by: {{project.build-by}} </p>
+            <a href="{{project.live_url}}" class="button button-dark" target="_blank"> View Live Site </a>
+        </div>
+    </div>
+
+    {% endfor %}
+    </div>
+</section>

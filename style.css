@@ -105,7 +105,7 @@ body {
 /* Background Colors--------- */
 .bg-light    { background-color: white; }
 .bg-featured { background-color: red; }
-.bg-dark      {background-color: black; }
+.bg-dark      {background-color: #232323; }
 .border-white { border: 1rem solid white;}
 
 .text-featured { color: red;} 
