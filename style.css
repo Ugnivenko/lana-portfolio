@@ -183,6 +183,7 @@ header { padding: 2% 2%;}
 footer p {
   color: #f8f8f8;
   opacity: 0.8;
+  font-size: 1.1rem;
 }
 .t-hover:hover {
     color: #e24848;
