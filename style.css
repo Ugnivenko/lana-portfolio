@@ -109,8 +109,10 @@ body {
 .border-white { border: 1rem solid white;}
 
 .text-featured { color: #e24848;} 
-.text-white {color: white;}
+.text-light {color: #f8f8f8;}
 .text-dark {color: #232323;}
+
+.font-light {font-weight: light;}
 
 /* ------ Base Typography ------- */
 body {
@@ -123,10 +125,10 @@ h1, h2,h4,h5,h6 {
   margin-bottom: 1rem;
 }
 
-h1 { font-size: 2.5rem;}
-h2 { font-size: 2rem; }
+h1 { font-size: 2.8rem;}
+h2 { font-size: 2.3rem; }
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 0.7rem;
 }
 
@@ -227,13 +229,13 @@ header { padding: 2% 2%;}
   background-repeat: no-repeat;
   background-image: url('/images/bg-light.jpg');
 }
-.bg-grey { background-image: url('/images/grey.jpg');}
+.bg-grey { background-image: url('/images/hands.jpg');}
 .bg-dunes { background-image: url('/images/dunes.jpg');}
 .bg-cup { 
   background-image: url('/images/cup.jpg');
-  background-position: 50% 30%;
+  background-position: 50% 50%;
 }
-.bg-galaxy { background-image: url('/images/galaxy.jpg');}
+
 
 .gallery [class*="col-"] { padding: 0.5%;}
 
@@ -290,6 +292,7 @@ input, textarea {
 #typed {
 	color: #e24848;
   font-size: 1.3rem;
+  font-weight: bold
 } 
 #black {color: black;}
 .typed-cursor {
