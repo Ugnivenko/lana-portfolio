@@ -16,22 +16,22 @@ section { position: relative; }
 'Maven Pro', sans-serif; 400,500,600
 'Noto Sans Display', sans-serif;
 - colors
-light #acc2b6
+light #dedacf - grey 
 feartured #95b1a2
 dark #3f564b
 */
 
 /* temporary styles */
-* {
+/* * {
     padding: 0.5rem;
     border: 1px solid rgb(220,220,220);
-}
+} */
 /* html,
 body {
     border: none;
 } */
 /* h1, h2, h3, h4, h5, h6, p, a {border: 1px solid rgb(210, 152, 145);} */
-.bg-image {background-color: rgb(224, 188, 127);}
+/* .bg-image {background-color: rgb(224, 188, 127);} */
 /* End temporary styles */
 
 /* Re-usable Utiity Classes  */
@@ -103,19 +103,20 @@ body {
 .square        { padding-bottom: 100%; }
 
 /* Background Colors--------- */
-.bg-light    { background-color: white; }
-.bg-featured { background-color: red; }
+.bg-light    { background-color: #dedacf; }
+.bg-featured { background-color: #e24848; }
 .bg-dark      {background-color: #232323; }
 .border-white { border: 1rem solid white;}
 
-.text-featured { color: red;} 
+.text-featured { color: #e24848;} 
 .text-white {color: white;}
-.text-dark {color: black;}
+.text-dark {color: #232323;}
 
 /* ------ Base Typography ------- */
 body {
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 300;
+  color: #232323;
 }
 
 h1, h2,h4,h5,h6 {
@@ -273,7 +274,7 @@ input, textarea {
 /* Typing Animation------- */
 
 #typed {
-	color: black;
+	color: #e24848;
   font-size: 1.3rem;
 } 
 #black {color: black;}
