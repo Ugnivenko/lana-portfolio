@@ -128,11 +128,7 @@ h3 {
   font-size: 1.3rem;
   margin-bottom: 0.7rem;
 }
-a {
-  direction: none;
-  border-bottom: 1px;
-  color: inherit;
-}
+
 p {  
   line-height: 1.5;
   margin-bottom: 0.8rem;
@@ -154,6 +150,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+nav a:hover { color: red;}
 
 .subtle { 
   opacity: 0.8;

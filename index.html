@@ -27,3 +27,72 @@ flodesk-popup: false
     <h1> About Me </h1>
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, dicta quis? Velit est ipsam recusandae exercitationem autem aspernatur. Tempora eum totam natus culpa dignissimos nobis nam quis corrupti, dolores dicta.</p>
 </section>
+
+
+<!-- Icon Grid -->
+<section class="grid center icon-section padded">
+    <div class="col-12 center padded-b">
+        <h2> Why Choose Us </h2>
+    </div>
+    <div class="col-4_sm-6_xs-12">
+        <img src="/images/icons/flash.png">
+        <h4> Concept Creation </h4>
+        <p> Yin aliquam, quas quisquam saepe, recusandae odio officiis ipsum eaque. </p>
+    </div>
+    <div class="col-4_sm-6_xs-12">
+        <img src="/images/icons/idea-2.svg">
+        <h4> Strategic Perspective </h4>
+        <p> Laboriosam error amet quae sequi eum dolore, aliquam nostrum vitae odit aut sed in recusandae </p>
+    </div>
+    <div class="col-4_sm-6_xs-12">
+        <img src="/images/icons/dollar.svg">
+        <h4> Modern Technologies </h4>
+        <p> Building fast and SEO optimized web-sites using latest coding technologies </p>
+    </div>
+</section>
+
+<!-- Banner Section -->
+<section class="grid-middle padded tall-70">
+    <div class="col-8_sm-10">
+        <h2> Website design & development that grows with your business </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quas culpa adipisci! Nobiso, nostrum quia obcaecati facilis, praesentium totam in. Perferendis, placeat! </p>
+    </div>
+</section>
+
+
+ <!-- Services Grid -->
+ <section class="grid padded center">
+    <h3> Services</h3>
+    <div class="col-4_xs-12 padded">
+        <h3> Design. </h3>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quos culpa illum ratione placeat assumenda doloremque architecto officia nulla modi temporibus, nihil magni harum iusto et ea!</p>
+    </div>
+    <div class="col-4_xs-12 padded">
+        <h3> Build. </h3>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quos culpa illum ratione placeat assumenda doloremque architecto officia nulla modi temporibus, nihil magni harum iusto et ea!</p>
+    </div>
+    <div class="col-4_xs-12 padded">
+        <h3> SEO. </h3>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate quos culpa illum ratione placeat assumenda doloremque architecto officia nulla modi temporibus, nihil magni harum iusto et ea!</p>
+    </div>
+</section>
+
+
+ <!-- Features / about blocks -->
+    <section class="bg-rust padded projects" id="projects">
+        <h2 class="center"> Recent Projects </h2>
+
+    {% for project in site.projects limit:2 %}
+
+        <div class="grid flex-flip-alternate">
+            <div class="col-5_sm-12-middle padded">
+                <h3> {{ project.title }} </h3>
+                <p> {{ project.description }}</p>
+                <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
+            </div>
+            <div class="col-7_sm-12-middle padded ">
+                <img src="{{ project.featured_image }}" alt="{{ project.title }}">
+            </div>
+        </div>
+    {% endfor %}
+    </section>
