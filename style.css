@@ -210,7 +210,13 @@ header { padding: 1% 5%;}
   padding: 0.25rem 0.5rem;
 }
 
-
+/* Icon Grid Section */
+.icon-section img {
+  max-width: 3rem;
+  opacity: 0.8;
+  margin: 1rem 0;
+  }
+  
 /*-- Background Images --------------------------------*/
 
 .bg-image {
