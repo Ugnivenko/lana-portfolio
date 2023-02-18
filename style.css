@@ -103,7 +103,7 @@ body {
 .square        { padding-bottom: 100%; }
 
 /* Background Colors--------- */
-.bg-light    { background-color: #dedacf; }
+.bg-light    { background-color: #f8f8f8; }
 .bg-featured { background-color: #e24848; }
 .bg-dark      {background-color: #232323; }
 .border-white { border: 1rem solid white;}
@@ -152,7 +152,8 @@ a {
   color: inherit;
 }
 
-nav a:hover { color: red;}
+nav a {padding: 0.25rem;}
+nav a:hover { color: #e24848;}
 
 .subtle { 
   opacity: 0.8;
@@ -176,7 +177,7 @@ nav a:hover { color: red;}
 
 /* Footer & Header ------------------------- */
 
-header { padding: 1% 5%;}
+header { padding: 2% 2%;}
 
 /* Buttons ---------------*/
 .button {
@@ -187,11 +188,11 @@ header { padding: 1% 5%;}
   font-weight: 400;
   font-size: 0.9rem;
   color: black;
-  background-color:  white;
+  background-color:  #f8f8f8;
   margin-top: 0.8rem;
 }
 .button:hover {
-  background-color: red;
+  background-color: #e24848;
 }
 
 /* ------- Social Links - Class ------------ */
@@ -201,7 +202,7 @@ header { padding: 1% 5%;}
   padding-left: 0.5rem;
 }
 .fa-brands:hover {
-  color: red;
+  color: #e24848;
 }
 .fa-brands:first-child {padding-left: 0%;}
 
@@ -216,16 +217,23 @@ header { padding: 1% 5%;}
   opacity: 0.8;
   margin: 1rem 0;
   }
-  
+
 /*-- Background Images --------------------------------*/
 
 .bg-image {
-  background-color: rgb(240,240,240); 
+  background-color: #f8f8f8; 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
   background-image: url('/images/bg-light.jpg');
 }
+.bg-grey { background-image: url('/images/grey.jpg');}
+.bg-dunes { background-image: url('/images/dunes.jpg');}
+.bg-cup { 
+  background-image: url('/images/cup.jpg');
+  background-position: 50% 30%;
+}
+.bg-galaxy { background-image: url('/images/galaxy.jpg');}
 
 .gallery [class*="col-"] { padding: 0.5%;}
 
