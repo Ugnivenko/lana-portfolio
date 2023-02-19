@@ -98,6 +98,7 @@ body {
 .margin-b-1 { margin-bottom: 1rem;}
 .margin-b-15 { margin-bottom: 1.5rem;}
 .margin-b-2 { margin-bottom: 2rem;}
+.margin-t-05 { margin-top: 0.5rem; }
 .margin-t-1 {margin-top: 1rem;}
 .margin-t-15 {margin-top: 1.5rem;}
 .margin-t-2 {margin-top: 2rem;}
@@ -353,12 +354,14 @@ input, textarea {
 #typed {
 	color: #e24848;
   font-size: 1.3rem;
-  font-weight: bold
+  font-weight: bold;
 } 
 #black {color: black;}
 .typed-cursor {
   font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
+.invisible { opacity: 0;}
 
 
 
