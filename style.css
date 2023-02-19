@@ -259,7 +259,7 @@ footer p {
 input, textarea {
     border-style: solid;
     border: 1px solid rgb(200, 200, 205);
-    padding: 0.8em;
+    padding: 0.5rem 0.8rem;
     display: block;
     width: 100%;
     font-size: 1rem;
