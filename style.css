@@ -89,7 +89,9 @@ body {
 }
 
 .margin-b-0 { margin-bottom: 0; }
+.margin-b-05 { margin-bottom: 0.5rem; }
 .margin-b-1 { margin-bottom: 1rem;}
+.margin-b-15 { margin-bottom: 1.5rem;}
 .margin-b-2 { margin-bottom: 2rem;}
 .margin-t-1 {margin-top: 1rem;}
 .margin-t-15 {margin-top: 1.5rem;}
@@ -111,6 +113,7 @@ body {
 .text-featured { color: #e24848;} 
 .text-light {color: #f8f8f8;}
 .text-dark {color: #232323;}
+.text-big {font-size: 3.5rem;}
 
 .font-light {font-weight: light;}
 
@@ -121,7 +124,7 @@ body {
   color: #232323;
 }
 
-h1, h2,h4,h5,h6 {
+h1, h2, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
@@ -160,6 +163,8 @@ nav a:hover { color: #e24848;}
 .subtle { 
   opacity: 0.8;
 } 
+.uppercase { text-transform: uppercase;}
+
 .capped-width-narrow {
   max-width: 1000px;
   margin: auto;
