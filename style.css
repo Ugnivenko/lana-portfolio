@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{ scroll-behavior: smooth; }
+
 img { max-width: 100%; height: auto;}
 
 /* Override default gridlex padding */ 
@@ -129,7 +131,10 @@ h1, h2, h4, h5, h6 {
 }
 
 h1 { font-size: 2.8rem;}
-h2 { font-size: 2.3rem; }
+h2 { 
+  font-size: 2.5rem; 
+  line-height: 1.5;
+}
 h3 {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
@@ -155,9 +160,13 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  transition: all 0.2s;
 }
 
-nav a {padding: 0.25rem;}
+nav a {
+  padding: 0.25rem;
+  transition: all 0.2s;
+}
 nav a:hover { color: #e24848;}
 
 .subtle { 
@@ -190,6 +199,7 @@ footer p {
   opacity: 0.8;
   font-size: 1.1rem;
 }
+footer a:hover { color:#e24848;}
 .t-hover:hover {
     color: #e24848;
 }
@@ -247,11 +257,15 @@ footer p {
 .bg-grey { 
   background-image: url('/images/hands.jpg');
 }
-.bg-plant { background-image: url('/images/plant-2.jpg');}
+.bg-plant { 
+  background-image: url('/images/plant-2.jpg');
+  background-position: 50% 50%;
+}
 .bg-cup { 
   background-image: url('/images/cup.jpg');
   background-position: 50% 50%;
 }
+
 
 hr.short {
   width: 4rem;
