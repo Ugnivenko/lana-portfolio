@@ -244,15 +244,42 @@ footer p {
   background-repeat: no-repeat;
   background-image: url('/images/bg-light.jpg');
 }
-.bg-grey { background-image: url('/images/hands.jpg');}
-.bg-dunes { background-image: url('/images/dunes.jpg');}
+.bg-grey { 
+  background-image: url('/images/hands.jpg');
+}
+.bg-plant { background-image: url('/images/plant-2.jpg');}
 .bg-cup { 
   background-image: url('/images/cup.jpg');
   background-position: 50% 50%;
 }
 
+hr.short {
+  width: 4rem;
+  margin: 2rem 0;
+}
 
 .gallery [class*="col-"] { padding: 0.5%;}
+
+
+/* -----------------Overlay Effect ------------------- */
+.bg-overlay {
+  position: relative;
+}
+
+.bg-overlay::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0,0,0,0.2);
+}
+
+.bg-overlay > * {
+  position: relative;
+}
+
 
 /* Contacts ----------------------------------- */
 
