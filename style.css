@@ -361,7 +361,11 @@ input, textarea {
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
-.invisible { opacity: 0;}
+.invisible { 
+  opacity: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
 
 
