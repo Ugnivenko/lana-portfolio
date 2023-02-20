@@ -1,10 +1,11 @@
 --- 
 layout: default 
+
 ---
 
 <section class="grid padded bg-green">
     <div class="col-9 light-text padded-b">
-        <h3> We design & create but if you have a design of your own, let us know! </h3>
+        <h3> I design & create but if you have a design of your own, let me know! </h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi neque distinctio, illum dolore fugit autem totam molestias labore, voluptatem provident quaerat vel eum repellat ducimus! Laboriosam nemo illo illum suscipit!</p>
     </div>
 
@@ -16,8 +17,8 @@ layout: default
     <div class="col-5_sm-12-middle padded-2">
         <h3> {{project.title}} </h3>
         <p class="emphasis"> {{project.description}} </p>
-        <p class="emphasis"> Design by: {{project.design-by}} </p>
-        <p class="emphasis"> Build by: {{project.build-by}} </p>
+        <p class="emphasis"> Design & Build by: {{project.design-by}} </p>
+        <!-- <p class="emphasis"> Build by: {{project.build-by}} </p> -->
         <a href="{{project.live_url}}" class="button" target="_blank"> View Live Site </a>
     </div>
 {% endfor %}
@@ -40,8 +41,8 @@ layout: default
             <p class="emphasis"> {{project.description}} </p>
         </div>
         <div class="col-4 padded-1 margin-t-1"> 
-            <p class="emphasis"> Design by: {{project.design-by}} </p>
-            <p class="emphasis"> Build by: {{project.build-by}} </p>
+            <p class="emphasis"> Design & Build by: {{project.design-by}} </p>
+            <!-- <p class="emphasis"> Build by: {{project.build-by}} </p> -->
             <a href="{{project.live_url}}" class="button button-dark" target="_blank"> View Live Site </a>
         </div>
     </div>

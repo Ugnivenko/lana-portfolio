@@ -178,7 +178,7 @@ nav a:hover { color: #e24848;}
 } 
 .uppercase { text-transform: uppercase;}
 
-.capped-width-narrow {
+.capped-width {
   max-width: 1000px;
   margin: auto;
 }
