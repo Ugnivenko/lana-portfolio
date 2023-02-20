@@ -211,18 +211,37 @@ footer a:hover { color:#e24848;}
 /* Buttons ---------------*/
 .button {
   text-decoration: none;
-  border: 2px solid; 
-  padding: 0.5rem 1rem;
+  border: 1px solid ; 
+  padding: 0.7rem 1.2rem;
   display: inline-block;
   font-weight: 400;
   font-size: 0.9rem;
-  color: black;
-  background-color:  #f8f8f8;
-  margin-top: 0.8rem;
+  color: #f8f8f8;
+  background-color: #232323;
+  margin-top: 1rem;
 }
 .button:hover {
-  background-color: #e24848;
+  color:   ;
+  opacity: 0.8;
 }
+.button-red:hover {
+  background-color: #e24848;
+  color: #232323;
+  /* opacity: 0.8; */
+}
+.button-red {
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background-color:  #e24848;
+  color: #f8f8f8;
+  border: none;
+}
+
+
 
 /* ------- Social Links - Class ------------ */
 .fa-brands, .fa-solid {
