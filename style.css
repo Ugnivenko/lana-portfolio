@@ -300,9 +300,12 @@ hr.short {
 
 /* -----------------------Gallery JS --------------------------- */
 
-.img-1 {background-image: url('/images/brightdeck-1.png');}
+.img-1 {background-image: url('/images/brightdeck-11.png');}
 .img-2 {background-image: url('/images/brightdeck-2.png');}
-.img-3 {background-image: url('/images/brightdeck-3.jpg');}
+.img-3 {
+  background-image: url('/images/brightdeck-3.jpg');
+  background-position: top;
+}
 .img-4 {background-image: url('/images/brightdeck-4.png');}
 .img-5 {background-image: url('/images/brightdeck-11.png');}
 
