@@ -55,7 +55,7 @@ layout: default
 
 {% for project in site.projects limit:5 offset:1 %}
     <div class="col-7_sm-12-middle margin-b-2">
-        <div class="bg-image landscape-wide" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
+        <div class="bg-image landscape-wide lazy" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
     </div>
     <div class="col-5_sm-12-middle padded-2">
         <h3> {{project.title}}<span class="text-featured">.</span> </h3>

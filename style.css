@@ -126,7 +126,7 @@ body {
 /* ------ Base Typography ------- */
 body {
   font-family: 'Noto Sans Display', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #232323;
 }
 
@@ -142,6 +142,9 @@ h2 {
 h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+h4 {
+  font-size: 1.2rem;
 }
 
 p {  
@@ -169,6 +172,7 @@ a {
 
 nav a {
   padding: 0.25rem;
+  font-weight: 400;
   transition: all 0.2s;
 }
 nav a:hover { color: #e24848;}
@@ -180,6 +184,7 @@ nav a:hover { color: #e24848;}
   font-weight: 300;
   opacity: 0.9;
 }
+
 .uppercase { text-transform: uppercase;}
 
 .capped-width {
