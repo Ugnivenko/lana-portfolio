@@ -327,7 +327,7 @@ hr.short {
     }
     
     .slider-item {
-      padding: 0.7rem;
+      padding: 0.5rem;
       /* border: 2px solid orange; */
       display: none;
     }
@@ -478,11 +478,17 @@ input, textarea {
     display: none;
 } 
 
-
+/* Responsive SM - 768px */
   
     @media(max-width:768px) {
+
+      .sm-h2 {font-size: 2rem;}
+
      .email-signup input {
        width: 100%;
        max-width: 100%;
+     }
+     .slider-container{
+      padding: 1rem;
      }
    }
