@@ -36,7 +36,7 @@ layout: default
                 <p class="emphasis subtle"> {{project.description}} </p>
             </div>
             <div class="col-4-bottom padded-1 margin-t-1"> 
-                <p class="emphasis"> Design & Build by: {{project.design-by}} </p>
+                <p > Design & Build by: <span class="emphasis">  {{project.design-by}} </span> </p>
                 <a href="{{project.live_url}}" class="button-red" target="_blank"> View Live Site </a>
             </div>
         </div>
@@ -46,8 +46,8 @@ layout: default
 
 <!-- My Projects ------------------------------>
 
-<section class="grid padded bg-green">
-    <div class="col-9 light-text padded-b">
+<section class="grid padded">
+    <div class="col-9 light-text padded-b padded-t-1">
         <h3> I design & create but if you have a design of your own, let me know! </h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi neque distinctio, illum dolore fugit autem totam molestias labore, voluptatem provident quaerat vel eum repellat ducimus! Laboriosam nemo illo illum suscipit!</p>
     </div>
@@ -55,7 +55,7 @@ layout: default
 
 {% for project in site.projects limit:5 offset:1 %}
     <div class="col-7_sm-12-middle margin-b-2">
-        <div class="bg-image landscape" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
+        <div class="bg-image landscape-wide" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
     </div>
     <div class="col-5_sm-12-middle padded-2">
         <h3> {{project.title}}<span class="text-featured">.</span> </h3>
