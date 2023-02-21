@@ -119,14 +119,14 @@ body {
 .text-featured { color: #e24848;} 
 .text-light {color: #f8f8f8;}
 .text-dark {color: #232323;}
-.text-big {font-size: 3.5rem;}
+.text-big {font-size: 4.5rem;}
 
 .font-light {font-weight: light;}
 
 /* ------ Base Typography ------- */
 body {
   font-family: 'Noto Sans Display', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #232323;
 }
 
@@ -141,7 +141,7 @@ h2 {
 }
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 p {  
@@ -176,6 +176,10 @@ nav a:hover { color: #e24848;}
 .subtle { 
   opacity: 0.8;
 } 
+.emphasis { 
+  font-weight: 300;
+  opacity: 0.9;
+}
 .uppercase { text-transform: uppercase;}
 
 .capped-width {
@@ -223,7 +227,7 @@ footer a:hover { color:#e24848;}
 }
 .button:hover {
   color:   ;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .button-red:hover {
   background-color: #e24848;
@@ -310,24 +314,15 @@ hr.short {
 .img-5 {background-image: url('/images/brightdeck-11.png');}
 
 
-/* .caption {
-    font-family: inherit;
-    color: inherit;
-    font-size: 0.9rem;
-    margin-top: 0.6rem;
-    font-style: italic;
-    text-align: center;
-  } */
-
 /* Content */
 .slider-container {
       /* border: 1px solid blue; */
-      padding: 5%;
+      padding: 2rem;
       /* padding-top: 1rem; */
     }
     
     .slider-item {
-      padding: 0.5rem;
+      padding: 0.7rem;
       /* border: 2px solid orange; */
       display: none;
     }
@@ -337,42 +332,42 @@ hr.short {
     
     /* this is needed if you wanna change the symbol */
     .slick-prev:before {
-      font-family: 'Noto Sans Georgian', sans-serif;
-      content: '←';}
+        font-family: 'Montserrat', sans-serif;
+        content: '←';}
     
     .slick-next::before, .slick-prev::before {
           font-family: slick;
-          font-family: 'Noto Sans Georgian', sans-serif;
+          font-family: 'Montserrat', sans-serif;
           font-size: 25px;
           line-height: 1;
           opacity: .6;
-          color: #CCB38E;
+          /* color: #e24848; */
     } 
     /* move arrows into the container */
-    .slick-prev { left: 1.5%;}
-    .slick-next { right: 1.5%;}
+    .slick-prev { left: -10px;}
+    .slick-next { right: -10px;}
     
     /* Styling Dots */
     .slick-dots {
-         bottom: 3%;
+         bottom: 0;
          left: 0; 
     /*  left 0 is to center the dots , do not delete */
     }
     /* to control the distance between dots */
     .slick-dots li,
     .slick-dots li button {
-           width: 11px;
+           width: 15px;
     }
     .slick-dots li button::before {
-           font-size: 10px;
-           color: #e24848;
+           font-size: 8px;
+           color: #f8f8f8;
            opacity: .6;
-           font-family: 'Noto Sans Georgian', sans-serif;
+           /* font-family: 'Montserrat', sans-serif; */
     }
     .slick-dots li.slick-active button::before {
-           color: black;
-           opacity: .6;
-           font-family: 'Noto Sans Georgian', sans-serif;
+           color: #f8f8f8;
+           /* opacity: .6; */
+           /* font-family: 'Montserrat', sans-serif; */
     }
 
 

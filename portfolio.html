@@ -6,7 +6,7 @@ layout: default
 <!-- Featured Project ------------- -->
 
 <section class="padded bg-dark text-light">
-    <h2 class="center margin-b-2"> Featured Project <span class="text-featured">.</span> </h2>
+    <h2 class="center "> Featured Project<span class="text-featured">.</span> </h2>
 
     <div class="capped-width"> 
         <div class="slider-container">
@@ -31,13 +31,12 @@ layout: default
         <div class="capped-width"> 
     {% for project in site.projects limit:1 %}
         <div class="grid-spaceBetween">
-            <div class="col-5 padded-1 margin-t-1"> 
-                <h3> {{project.title}}  </h3>
-                <p class="emphasis"> {{project.description}} </p>
+            <div class="col-5 padded-1 margin-t-1 "> 
+                <h3> {{project.title}} </h3>
+                <p class="emphasis subtle"> {{project.description}} </p>
             </div>
             <div class="col-4-bottom padded-1 margin-t-1"> 
                 <p class="emphasis"> Design & Build by: {{project.design-by}} </p>
-                <!-- <p class="emphasis"> Build by: {{project.build-by}} </p> -->
                 <a href="{{project.live_url}}" class="button-red" target="_blank"> View Live Site </a>
             </div>
         </div>
@@ -56,7 +55,7 @@ layout: default
 
 {% for project in site.projects limit:5 offset:1 %}
     <div class="col-7_sm-12-middle margin-b-2">
-        <div class="bg-image landscape" style="background-image: url('{{project.featured_image}}');"> </div>
+        <div class="bg-image landscape" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
     </div>
     <div class="col-5_sm-12-middle padded-2">
         <h3> {{project.title}}<span class="text-featured">.</span> </h3>
