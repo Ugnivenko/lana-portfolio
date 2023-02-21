@@ -290,13 +290,87 @@ footer a:hover { color:#e24848;}
   background-position: 50% 50%;
 }
 
-
 hr.short {
   width: 4rem;
   margin: 2rem 0;
 }
 
 .gallery [class*="col-"] { padding: 0.5%;}
+
+
+/* -----------------------Gallery JS --------------------------- */
+
+.img-1 {background-image: url('/images/brightdeck-1.png');}
+.img-2 {background-image: url('/images/brightdeck-2.png');}
+.img-3 {background-image: url('/images/brightdeck-3.jpg');}
+.img-4 {background-image: url('/images/brightdeck-4.png');}
+.img-5 {background-image: url('/images/brightdeck-11.png');}
+
+
+/* .caption {
+    font-family: inherit;
+    color: inherit;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    font-style: italic;
+    text-align: center;
+  } */
+
+/* Content */
+.slider-container {
+      /* border: 1px solid blue; */
+      padding: 5%;
+      /* padding-top: 1rem; */
+    }
+    
+    .slider-item {
+      padding: 0.5rem;
+      /* border: 2px solid orange; */
+      display: none;
+    }
+    .slider-item:first-child {
+      display: block;
+    }
+    
+    /* this is needed if you wanna change the symbol */
+    .slick-prev:before {
+      font-family: 'Noto Sans Georgian', sans-serif;
+      content: '←';}
+    
+    .slick-next::before, .slick-prev::before {
+          font-family: slick;
+          font-family: 'Noto Sans Georgian', sans-serif;
+          font-size: 25px;
+          line-height: 1;
+          opacity: .6;
+          color: #CCB38E;
+    } 
+    /* move arrows into the container */
+    .slick-prev { left: 1.5%;}
+    .slick-next { right: 1.5%;}
+    
+    /* Styling Dots */
+    .slick-dots {
+         bottom: 3%;
+         left: 0; 
+    /*  left 0 is to center the dots , do not delete */
+    }
+    /* to control the distance between dots */
+    .slick-dots li,
+    .slick-dots li button {
+           width: 11px;
+    }
+    .slick-dots li button::before {
+           font-size: 10px;
+           color: #e24848;
+           opacity: .6;
+           font-family: 'Noto Sans Georgian', sans-serif;
+    }
+    .slick-dots li.slick-active button::before {
+           color: black;
+           opacity: .6;
+           font-family: 'Noto Sans Georgian', sans-serif;
+    }
 
 
 /* -----------------Overlay Effect ------------------- */

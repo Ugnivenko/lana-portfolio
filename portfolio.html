@@ -1,19 +1,34 @@
 --- 
 layout: default 
+
 ---
 
-
+<!-- Featured Project ------------- -->
 
 <section class="padded bg-dark text-light">
     <h2 class="center margin-b-2"> Featured Project <span class="text-featured">.</span> </h2>
 
     <div class="capped-width"> 
+        <div class="slider-container">
 
+            <div class="slider-item"> 
+                <div class="bg-image img-1 landscape-wide"></div>
+            </div>
+
+            <div class="slider-item"> 
+                <div class="bg-image img-2 landscape-wide"></div>
+            </div>
+
+            <div class="slider-item"> 
+                <div class="bg-image img-3 landscape-wide"></div>
+            </div>
+
+
+        </div>
+    </div>
+    
+        <div class="capped-width"> 
     {% for project in site.projects limit:1 %}
-
-        <div class="bg-image landscape-wide"
-    style="background-image: url('{{project.featured_image}}');"></div>
-
         <div class="grid-spaceBetween">
             <div class="col-5 padded-1 margin-t-1"> 
                 <h3> {{project.title}}  </h3>
@@ -25,10 +40,11 @@ layout: default
                 <a href="{{project.live_url}}" class="button-red" target="_blank"> View Live Site </a>
             </div>
         </div>
-
     {% endfor %}
     </div>
 </section>
+
+<!-- My Projects ------------------------------>
 
 <section class="grid padded bg-green">
     <div class="col-9 light-text padded-b">
