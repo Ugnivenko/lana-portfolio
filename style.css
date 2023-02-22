@@ -545,10 +545,12 @@ input, textarea {
 
     h1 { font-size: 1.8rem;}
     h2 { font-size: 1.7rem;  }
+    .xs-h2 { font-size: 1.4rem;  }
     .text-big {
       font-size: 2.3rem;
     }
     .xs-padded-t-1  { padding-top: 1rem;}
+    .xs-margin-t-2  { margin-top: 2rem;}
     #typed {
       font-size: 1.1rem;
       font-weight: bold;
