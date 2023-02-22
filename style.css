@@ -296,7 +296,7 @@ footer a:hover { color:#e24848;}
 }
 .bg-cup { 
   background-image: url('/images/cup.jpg');
-  background-position: 50% 50%;
+  background-position: 0% 50%;
 }
 
 hr.short {
@@ -458,11 +458,6 @@ input, textarea {
   font-size: 1.5rem;
   margin-top: 0.5rem;
 }
-.invisible { 
-  opacity: 0;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
 
 
 /* General CSS Responsive Styles ---------------------------- */
@@ -474,9 +469,8 @@ input, textarea {
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 @media (max-width: 64em) {
-  /* body {
-    border: 2px solid green;
-} */
+  body { border: 2px solid green;}
+
   .md-center {text-align: center;}
   .md-h2 { font-size: 2rem;}
   .md-text-big { font-size: 4rem;}
@@ -491,7 +485,9 @@ input, textarea {
   .md-padded-b-0 { padding-bottom: 0%;}
   .md-padded-b-1  { padding-bottom: 1rem;}
   .md-padded-t-1  { padding-bottom: 1rem;}
+
   .md-tall-40 {min-height: 40vh;}
+  .md-tall-60 {min-height: 60vh;}
 
   .flex-md { flex-direction: column-reverse; }
 
@@ -500,7 +496,6 @@ input, textarea {
     background-color: #232323;
     color: #f8f8f8;
     font-size: 2rem;
-    min-height: 30vh;
   } 
 }
 
@@ -508,10 +503,10 @@ input, textarea {
   
     @media(max-width:768px) {
       body {
-        /* border: 2px solid blue;} */
+        border: 2px solid blue;}
 
-    .sm-h1 {font-size: 2.5rem;}
-    .sm-h2 {font-size: 2rem;}
+    h1 {font-size: 2.3rem;}
+    h2 {font-size: 2rem;}
     .sm-padded-1 {padding: 1rem;}
     .sm-margin-b-2 {margin-bottom: 2rem;}
     .email-signup input {
@@ -522,17 +517,17 @@ input, textarea {
     color: #e24848;
     opacity: 0.8;
    }
-   .text-big { font-size: 3rem;}
+   .text-big { font-size: 2.8rem;}
 
   .bg-plant { 
     background-image: none;
     background-color: #232323;
     color: #f8f8f8;
-    font-size: 2rem;
+    min-height: 30vh;
   } 
   .bg-cup {
-    background-position: 0% 50%;
-    min-height: 40;
+    background-position: 30% 50%;
+    min-height: 60;
   }
 
    .sm-tall-30 {min-height: 30vh;}
@@ -542,3 +537,27 @@ input, textarea {
     padding: 0.4rem 0.8rem;
   }
    }
+
+  /* ------- XS Media Query (36em / 576px) --------------- */ 
+
+  @media (max-width: 36em) {
+
+    body {border: 2px solid red;}
+
+    h1 { font-size: 1.8rem;}
+    h2 { font-size: 1.7rem;  }
+    .text-big {
+      font-size: 2.3rem;
+    }
+    .xs-padded-t-1  { padding-top: 1rem;}
+    #typed {
+      font-size: 1.1rem;
+      font-weight: bold;
+    } 
+    #black {color: black;}
+    .typed-cursor {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+  }
