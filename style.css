@@ -474,9 +474,9 @@ input, textarea {
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 @media (max-width: 64em) {
-  body {
+  /* body {
     border: 2px solid green;
-}
+} */
   .md-center {text-align: center;}
   .md-h2 { font-size: 2rem;}
   .md-text-big { font-size: 4rem;}
@@ -508,7 +508,8 @@ input, textarea {
   
     @media(max-width:768px) {
       body {
-        border: 2px solid blue;}
+        /* border: 2px solid blue;} */
+
     .sm-h1 {font-size: 2.5rem;}
     .sm-h2 {font-size: 2rem;}
     .sm-padded-1 {padding: 1rem;}
