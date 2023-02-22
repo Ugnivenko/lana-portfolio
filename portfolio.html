@@ -2,11 +2,25 @@
 layout: default 
 
 ---
+<!-- Header Intro Section --------------- -->
+<section class="grid-bottom padded bg-cup bg-image tall-70 md-tall-40" >
+    <div class="col- margin-b-15"> 
+        <!-- <h1> Hi, I'm Lana. </h1> -->
+        <h1 class="margin-b-05 subtle"> I'm a </h1>
+        <h1 class="text-big md-text-big uppercase">web developer<span class="text-featured">.</span> </h1> 
+   
+        <div class="col-" id="typed-strings"> 
+            <span id="black"> <strong>Contact Me</strong> </span>
+        </div> 
+        <div style="min-height: 2rem;"> <span id="typed" class="margin-t-05"></span> </div>  
+          
+        </div>
+</section>
 
 <!-- Featured Project ------------- -->
 
 <section class="padded bg-dark text-light">
-    <h2 class="center sm-h2"> Featured Project<span class="text-featured">.</span> </h2>
+    <h2 class="center md-padded-t-1 sm-h2"> Featured Project<span class="text-featured">.</span> </h2>
 
     <div class="capped-width"> 
         <div class="slider-container">
@@ -31,11 +45,11 @@ layout: default
         <div class="capped-width"> 
     {% for project in site.projects limit:1 %}
         <div class="grid-spaceBetween">
-            <div class="col-5_sm-12 padded-1 margin-t-1 "> 
+            <div class="col-5_md-10_sm-12 padded-1 margin-t-1 "> 
                 <h3> {{project.title}} </h3>
                 <p class="emphasis subtle"> {{project.description}} </p>
             </div>
-            <div class="col-4_sm-12-bottom padded-1 margin-t-1"> 
+            <div class="col-4_md-12-bottom padded-1 margin-t-1"> 
                 <p > Design & Build by: <span class="emphasis">  {{project.design-by}} </span> </p>
                 <a href="{{project.live_url}}" class="button-red" target="_blank"> View Live Site </a>
             </div>
@@ -46,7 +60,7 @@ layout: default
 
 <!-- My Projects ------------------------------>
 
-<section class="grid padded">
+<section class="grid padded md-margin-t-1 md-padded-b-0">
     <div class="col-9_sm-12 light-text padded-b padded-t-1">
         <h3> If you have a design of your own, let's create it together! </h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi neque distinctio, illum dolore fugit autem totam molestias labore, voluptatem provident quaerat vel eum repellat ducimus! Laboriosam nemo illo illum suscipit!</p>
@@ -54,10 +68,10 @@ layout: default
 
 
 {% for project in site.projects limit:5 offset:1 %}
-    <div class="col-7_sm-12-middle margin-b-2">
+    <div class="col-7_md-12-middle margin-b-2">
         <div class="bg-image landscape-wide lazy" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
     </div>
-    <div class="col-5_sm-12-middle padded-2">
+    <div class="col-5_md-12-middle padded-2 md-margin-b-2 sm-padded-1">
         <h3> {{project.title}}<span class="text-featured">.</span> </h3>
         <p class="emphasis"> {{project.description}} </p>
         <p class="emphasis"> Design & Build by: {{project.design-by}} </p>

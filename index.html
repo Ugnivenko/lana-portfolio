@@ -12,11 +12,11 @@ seo:
 getButton: false
 ---
 <!-- Header Intro Section --------------- -->
-<section class="grid-bottom padded bg-cup bg-image tall-70" >
+<section class="grid-bottom padded bg-cup bg-image tall-70 md-tall-40" >
     <div class="col- margin-b-15"> 
         <!-- <h1> Hi, I'm Lana. </h1> -->
         <h1 class="margin-b-05 subtle"> I'm a </h1>
-        <h1 class="text-big uppercase">web developer<span class="text-featured">.</span> </h1> 
+        <h1 class="text-big md-text-big uppercase">web developer<span class="text-featured">.</span> </h1> 
    
         <div class="col-" id="typed-strings"> 
             <span id="black"> <strong>Contact Me</strong> </span>
@@ -28,12 +28,12 @@ getButton: false
 
 <!-- About Me Section --------------- -->
 
-<section class="grid padded bg-dark relative">
-        <div class="tall-60 col-6_sm-12 banner bg-image bg-grey lazy">
+<section class="grid padded bg-dark relative md-padded-b-1 ">
+        <div class="tall-60 md-tall-40 sm-tall-30 col-6_md-12 banner bg-image bg-grey lazy">
         </div>
 
-    <div class="col-6_sm-12-middle padded bg-dark text-light">
-      <h2 class="big-bold"> About Me </h2>
+    <div class="col-6_md-12 padded bg-dark text-light">
+      <h2 class="big-bold sm-h2"> About Me </h2>
       <p class="emphasis"> Hello! I am Lana, a freelance web developer. I specialize in creating custom-built websites using the latest technologies. I am here to help you bring your vision to life. </p>
       <p class="emphasis"> My goal is to create websites that are easy to use, visually appealing, and optimized for search engines. I strive to provide my clients with the best possible customer service and web development experience.
       <hr class="short "> 
@@ -42,21 +42,21 @@ getButton: false
 
 <!-- Icon Grid -->
 <section class="grid-spaceAround center icon-section padded-lg ">
-    <div class="col-12 center padded-b">
+    <div class="col-12 center padded-b sm-margin-b-2">
         <h2 > A single flow of creativity<span class="text-featured">.</span> </h2>
     </div>
-    <div class="col-3_sm-6_xs-12 ">
+    <div class="col-3_sm-9 sm-margin-b-2  center">
         <img src="/icons/flash.png" >
         <h4 class=""> Design. </h4>
         <p> Concept creation and stratigic planning and creating an attractive and functinal website design </p>
     </div>
-    <div class="col-3_sm-6_xs-12">
+    <div class="col-3_sm-9 sm-margin-b-2  center">
         <img src="/icons/idea-2.svg">
         <h4 class=""> Build. </h4>
         <p> Building fast web-sites using latest coding technologies, and integrating contant management system </p>
         <!-- <p> Contant Management System - Enabling clients to manage their website content, including text, images and files. </p> -->
     </div>
-    <div class="col-3_sm-6_xs-12">
+    <div class="col-3_sm-9 sm-margin-b-2  center">
         <img src="/icons/seo-tag.png">
         <h4 class=""> Optimize. </h4>
         <p> Improving a website's visibility in search engines and optimizing it for usability and performance </p>
@@ -64,9 +64,9 @@ getButton: false
 </section>
 
 <!-- Banner Section -->
-<section class="grid-middle right bg-image bg-plant padded tall-70 lazy">
+<section class="grid-middle right bg-image bg-plant padded tall-70 sm-tall-30  md-tall-40 lazy">
     <div class="col-12 ">
-        <h2> Website Design <span class="text-featured">&</span> Development <br> that grows with your business </h2>
+        <h2 class="md-h2"> Website Design <span class="text-featured">&</span> Development <br> that grows with your business </h2>
     </div>
 </section>
 
@@ -94,13 +94,13 @@ getButton: false
 
     {% for project in site.projects limit:2 %}
 
-        <div class="grid">
-            <div class="col-5_sm-12-middle padded">
+        <div class="grid flex-md">
+            <div class="col-5_md-12-middle padded ">
                 <h3> {{ project.title }} </h3>
                 <p> {{ project.description }}</p>
                 <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
             </div>
-            <div class="col-7_sm-12-middle padded lazy ">
+            <div class="col-7_md-12-middle padded lazy md-padded-b-1">
                 <img src="{{ project.featured_image }}" alt="{{ project.title }}">
             </div>
         </div>
