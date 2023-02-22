@@ -488,13 +488,20 @@ input, textarea {
   .md-margin-t-1 { margin-top: 1rem; }
   .md-margin-b-2 {margin-bottom: 2rem;}
 
-
   .md-padded-b-0 { padding-bottom: 0%;}
   .md-padded-b-1  { padding-bottom: 1rem;}
   .md-padded-t-1  { padding-bottom: 1rem;}
   .md-tall-40 {min-height: 40vh;}
 
   .flex-md { flex-direction: column-reverse; }
+
+  .bg-plant { 
+    background-image: none;
+    background-color: #232323;
+    color: #f8f8f8;
+    font-size: 2rem;
+    min-height: 30vh;
+  } 
 }
 
 /* Responsive SM - 768px */
