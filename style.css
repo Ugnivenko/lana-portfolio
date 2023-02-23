@@ -515,6 +515,7 @@ input, textarea {
     h2 {font-size: 2rem;}
    
     .sm-padded-1 {padding: 1rem;}
+    .sm-margin-b-1 {margin-bottom: 1rem;}
     .sm-margin-b-2 {margin-bottom: 2rem;}
     .email-signup input {
        width: 100%;
@@ -533,8 +534,8 @@ input, textarea {
     min-height: 30vh;
   } 
   .bg-cup {
-    background-position: 30% 10%;
-    min-height: 35vh;
+    background-position: 30% 0%;
+    min-height: 40vh;
   }
 
    .sm-tall-30 {min-height: 30vh;}
