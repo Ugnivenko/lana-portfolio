@@ -533,8 +533,8 @@ input, textarea {
     min-height: 30vh;
   } 
   .bg-cup {
-    background-position: 30% 50%;
-    min-height: 30vh;
+    background-position: 30% 0%;
+    min-height: 35vh;
   }
 
    .sm-tall-30 {min-height: 30vh;}
