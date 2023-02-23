@@ -119,7 +119,6 @@ body {
 .text-featured { color: #e24848;} 
 .text-light {color: #f8f8f8;}
 .text-dark {color: #232323;}
-.text-big {font-size: 4.5rem;}
 
 .font-light {font-weight: light;}
 
@@ -180,6 +179,12 @@ nav a:hover { color: #e24848;}
 .subtle { 
   opacity: 0.8;
 } 
+.subtle-pop {
+  font-size: 4rem;
+  opacity: 0.2;
+  margin-bottom: -1rem;
+  margin-left: -2rem;
+}
 .emphasis { 
   font-weight: 300;
   opacity: 0.9;
@@ -197,6 +202,8 @@ nav a:hover { color: #e24848;}
   font-size: 0.8rem;
   font-style: italic;
   }
+
+.text-big {font-size: 5rem;}
 
 /* Icons------------------------------------- */
 
