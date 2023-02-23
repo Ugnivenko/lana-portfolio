@@ -180,8 +180,8 @@ nav a:hover { color: #e24848;}
   opacity: 0.8;
 } 
 .subtle-pop {
-  font-size: 4rem;
-  opacity: 0.2;
+  font-size: 7rem;
+  opacity: 0.1;
   margin-bottom: -1rem;
   margin-left: -2rem;
 }
@@ -513,6 +513,7 @@ input, textarea {
 
     h1 {font-size: 2.3rem;}
     h2 {font-size: 2rem;}
+   
     .sm-padded-1 {padding: 1rem;}
     .sm-margin-b-2 {margin-bottom: 2rem;}
     .email-signup input {
@@ -533,7 +534,7 @@ input, textarea {
   } 
   .bg-cup {
     background-position: 30% 50%;
-    min-height: 40;
+    min-height: 40vh;
   }
 
    .sm-tall-30 {min-height: 30vh;}
