@@ -29,7 +29,7 @@ getButton: false
 <!-- Featured Project ------------- -->
 
 <section class="padded bg-dark text-light sm-padded-1">
-    <h2 class="center md-padded-t-1 sm-h2 xs-margin-t-2"> Featured Project<span class="text-featured">.</span> </h2>
+    <h2 class="center md-padded-t-1 sm-h2 xs-margin-t-1"> Featured Project<span class="text-featured">.</span> </h2>
 
     <div class="capped-width"> 
         <div class="slider-container">
@@ -54,7 +54,7 @@ getButton: false
         <div class="capped-width"> 
     {% for project in site.projects limit:1 %}
         <div class="grid-spaceBetween">
-            <div class="col-5_md-10_sm-12 padded-1 margin-t-1 "> 
+            <div class="col-5_md-10_sm-12 padded-1 margin-t-1 sm-padded-t-0"> 
                 <h3> {{project.title}} </h3>
                 <p class="emphasis subtle"> {{project.description}} </p>
             </div>
