@@ -504,6 +504,11 @@ input, textarea {
     color: #f8f8f8;
     font-size: 2rem;
   } 
+  .bg-cup {
+    background-image: none;
+    background-color: #f8f8f8;
+    min-height: 30vh;
+  }
 }
 
 /* Responsive SM - 768px */
@@ -513,7 +518,9 @@ input, textarea {
 
     h1 {font-size: 2.3rem;}
     h2 {font-size: 2rem;}
+    h3 {font-size: 1.4rem;}
    
+    .sm-padded-t-0 {padding-top: 0 !important}
     .sm-padded-1 {padding: 1rem;}
     .sm-margin-b-1 {margin-bottom: 1rem;}
     .sm-margin-b-2 {margin-bottom: 2rem;}
@@ -534,9 +541,6 @@ input, textarea {
     min-height: 30vh;
   } 
   .bg-cup {
-    background-position: 0% 0%;
-    background-image: none;
-    background-color: #f8f8f8;
     min-height: 30vh;
   }
 
@@ -568,7 +572,8 @@ input, textarea {
       font-size: 2.3rem;
     }
     .xs-padded-t-1  { padding-top: 1rem;}
-    .xs-margin-t-2  { margin-top: 2rem;}
+    .xs-margin-b-0  { margin-bottom: 0;}
+    .xs-margin-t-1  { margin-top: 1rem;}
     #typed {
       font-size: 1.1rem;
       font-weight: bold;

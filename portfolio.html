@@ -77,10 +77,10 @@ getButton: false
 
 
 {% for project in site.projects limit:5 offset:1 %}
-    <div class="col-7_md-12-middle margin-b-2">
+    <div class="col-7_md-12-middle margin-b-2 ">
         <div class="bg-image landscape-wide lazy" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"> </div>
     </div>
-    <div class="col-5_md-12-middle padded-2 md-margin-b-2 sm-padded-1">
+    <div class="col-5_md-12-middle padded-2 md-margin-b-2 sm-padded-1 sm-padded-t-0">
         <h3> {{project.title}}<span class="text-featured">.</span> </h3>
         <p class="emphasis"> {{project.description}} </p>
         <p class="emphasis"> Created by: {{project.design-by}} </p>

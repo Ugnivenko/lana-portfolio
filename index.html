@@ -29,7 +29,7 @@ getButton: false
 <!-- About Me Section --------------- -->
 
 <section class="grid padded bg-dark relative md-padded-b-1 sm-padded-1">
-        <div class="tall-60 md-tall-40 sm-tall-30 col-6_md-12 banner bg-image bg-grey xs-margin-t-2 lazy">
+        <div class="tall-60 md-tall-40 sm-tall-30 col-6_md-12 banner bg-image bg-grey xs-margin-t-1 lazy">
         </div>
 
     <div class="col-6_md-12 padded bg-dark text-light">
@@ -90,7 +90,7 @@ getButton: false
 
  <!-- Recent Projects -->
     <section class="bg-light padded projects sm-padded-1" id="portfolio ">
-        <h2 class="center margin-t-1"> Recent Projects<span class="text-featured">.</span>  </h2>
+        <h2 class="center margin-t-1 xs-margin-b-0"> Recent Projects<span class="text-featured">.</span>  </h2>
 
     {% for project in site.projects limit:2 %}
 
@@ -101,7 +101,7 @@ getButton: false
                 <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
             </div>
             <div class="col-7_md-12-middle padded sm-padded-1 lazy md-padded-b-1">
-                <div class="bg-image landscape-wide lazy" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"  alt="{{ project.title }}"> </div>
+                <div class="bg-image landscape-wide lazy sm-margin-b-1" style="background-image: url('{{project.featured_image}}'); background-position: {{ project.background-position }};"  alt="{{ project.title }}"> </div>
             </div>
         </div>
     {% endfor %}
