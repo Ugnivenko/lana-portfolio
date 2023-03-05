@@ -65,7 +65,7 @@ getButton: false
         <div class="capped-width"> 
     {% for project in site.projects limit:1 %}
         <div class="grid-spaceBetween">
-            <div class="col-5_md-10_sm-12 padded-1 margin-t-1 sm-padded-t-0"> 
+            <div class="col-6_md-10_sm-12 padded-1 margin-t-1 sm-padded-t-0"> 
                 <h3> {{project.title}} </h3>
                 <p class="emphasis subtle"> {{project.description}} </p>
             </div>
@@ -82,7 +82,7 @@ getButton: false
 
 <section class="grid padded md-margin-t-1 md-padded-b-0 sm-padded-1">
     <div class="col-9_sm-12 light-text padded-b padded-t-1 sm-padded-1 sm-margin-b-1">
-        <h3> A Glimpse of Digital Experiences with a Personal Touch </h3>
+        <h3> A Glimpse of Digital Experience with a Personal Touch </h3>
         <p>My personal touch matches the minimalist aesthetic. </p> 
         <p> I believe that you don't need to rely on flashy animations to be successful. The minimalist UI design, primary 3-tone color scheme, text and empty space is what draw attention to the details in my projects. Your potential clients get everything they need to know in a glance, and that matters most. </p>
         <p>If you have a design of your own, a style that fits your brand, let me know and we will create it together.  </p>  
@@ -96,7 +96,7 @@ getButton: false
     <div class="col-5_md-12-middle padded-2 md-margin-b-2 sm-padded-1 sm-padded-t-0">
         <h3> {{project.title}}<span class="text-featured">.</span> </h3>
         <p class="emphasis"> {{project.description}} </p>
-        <p class="emphasis"> Created by: {{project.design-by}} </p>
+        <!-- <p class="emphasis"> Created by: {{project.design-by}} </p> -->
         <!-- <p class="emphasis"> Build by: {{project.build-by}} </p> -->
         <a href="{{project.live_url}}" class="button" target="_blank"> View Live Site </a>
     </div>
